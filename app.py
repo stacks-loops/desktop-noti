@@ -33,4 +33,8 @@ for newsitem in newsitems:
 
     notify2.init("News Notifier")
     n = notify2.Notification(None, icon = ICON_PATH)
+    n.set_timeout(10000)
+    n.update(newsitem['title'], newsitem['description'])
+    n.show()
+
 
