@@ -2,7 +2,7 @@ import requests
 import xml.etree.ElementTree as ET 
   
 # url of news rss feed 
-RSS_FEED_URL = "http://www.hindustantimes.com/rss/topnews/rssfeed.xml"    
+RSS_FEED_URL = "http://feeds.harvardbusiness.org/harvardbusiness?format=xml"    
   
 def loadRSS(): 
     ''' 

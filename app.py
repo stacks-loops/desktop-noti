@@ -3,7 +3,7 @@ import notify2
 from topnews import topStories 
 
 # path to notification window icon 
-ICON_PATH = "put full path to icon image here"
+ICON_PATH = "https://i.pinimg.com/564x/9d/ee/d5/9deed540271a1e024084f8cb1e675eec.jpg"
   
 # fetch news items 
 newsitems = topStories() 
@@ -30,4 +30,7 @@ for newsitem in newsitems:
   
     # short delay between notifications 
     time.sleep(15) 
+
+    notify2.init("News Notifier")
+    n = notify2.Notification(None, icon = ICON_PATH)
 
